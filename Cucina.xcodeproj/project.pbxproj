@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		3A1657B72592F287008369B3 /* CucinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1657B62592F287008369B3 /* CucinaTests.swift */; };
 		3A1657C22592F287008369B3 /* CucinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1657C12592F287008369B3 /* CucinaUITests.swift */; };
 		3A1657DB2592F8B5008369B3 /* CoreNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1657DA2592F8B5008369B3 /* CoreNavigationController.swift */; };
+		3A9AE44E25BCB0D70057915F /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9AE44925BCB0890057915F /* Realm.xcframework */; };
+		3A9AE44F25BCB0D70057915F /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9AE44925BCB0890057915F /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A9AE45325BCB0D90057915F /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9AE44125BCAF6E0057915F /* RealmSwift.xcframework */; };
+		3A9AE45425BCB0D90057915F /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9AE44125BCAF6E0057915F /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3A9AE45025BCB0D70057915F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A9AE44F25BCB0D70057915F /* Realm.xcframework in Embed Frameworks */,
+				3A9AE45425BCB0D90057915F /* RealmSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3A16579C2592F287008369B3 /* Cucina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cucina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A16579F2592F287008369B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +66,10 @@
 		3A1657C12592F287008369B3 /* CucinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CucinaUITests.swift; sourceTree = "<group>"; };
 		3A1657C32592F287008369B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A1657DA2592F8B5008369B3 /* CoreNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNavigationController.swift; sourceTree = "<group>"; };
+		3A9AE43125BCACEF0057915F /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = ../../Desktop/Realm.xcframework; sourceTree = "<group>"; };
+		3A9AE43925BCAD280057915F /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Dependencies/Static/Realm.xcframework; sourceTree = "<group>"; };
+		3A9AE44125BCAF6E0057915F /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Dependencies/Dynamic/RealmSwift.xcframework; sourceTree = "<group>"; };
+		3A9AE44925BCB0890057915F /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Dependencies/Dynamic/Realm.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9AE44E25BCB0D70057915F /* Realm.xcframework in Frameworks */,
+				3A9AE45325BCB0D90057915F /* RealmSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,7 @@
 				3A1657B52592F287008369B3 /* CucinaTests */,
 				3A1657C02592F287008369B3 /* CucinaUITests */,
 				3A16579D2592F287008369B3 /* Products */,
+				3A9AE43025BCACEF0057915F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +167,17 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		3A9AE43025BCACEF0057915F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A9AE44925BCB0890057915F /* Realm.xcframework */,
+				3A9AE44125BCAF6E0057915F /* RealmSwift.xcframework */,
+				3A9AE43925BCAD280057915F /* Realm.xcframework */,
+				3A9AE43125BCACEF0057915F /* Realm.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +188,7 @@
 				3A1657982592F287008369B3 /* Sources */,
 				3A1657992592F287008369B3 /* Frameworks */,
 				3A16579A2592F287008369B3 /* Resources */,
+				3A9AE45025BCB0D70057915F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
