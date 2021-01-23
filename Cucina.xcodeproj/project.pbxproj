@@ -18,6 +18,7 @@
 		3A9AE44F25BCB0D70057915F /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9AE44925BCB0890057915F /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A9AE45325BCB0D90057915F /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9AE44125BCAF6E0057915F /* RealmSwift.xcframework */; };
 		3A9AE45425BCB0D90057915F /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9AE44125BCAF6E0057915F /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A9AE45B25BCB2110057915F /* Startup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AE45A25BCB2110057915F /* Startup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		3A9AE43925BCAD280057915F /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Dependencies/Static/Realm.xcframework; sourceTree = "<group>"; };
 		3A9AE44125BCAF6E0057915F /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Dependencies/Dynamic/RealmSwift.xcframework; sourceTree = "<group>"; };
 		3A9AE44925BCB0890057915F /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Dependencies/Dynamic/Realm.xcframework; sourceTree = "<group>"; };
+		3A9AE45A25BCB2110057915F /* Startup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		3A1657D82592F86E008369B3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3A9AE45925BCB2060057915F /* Startup */,
 				3A1657D92592F88F008369B3 /* Navigation */,
 			);
 			path = Core;
@@ -176,6 +179,14 @@
 				3A9AE43125BCACEF0057915F /* Realm.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A9AE45925BCB2060057915F /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				3A9AE45A25BCB2110057915F /* Startup.swift */,
+			);
+			path = Startup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A1657DB2592F8B5008369B3 /* CoreNavigationController.swift in Sources */,
+				3A9AE45B25BCB2110057915F /* Startup.swift in Sources */,
 				3A1657A02592F287008369B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
